@@ -8,6 +8,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Random Words',
+      theme: ThemeData(
+        primaryColor: Colors.blueGrey,
+      ),
       home: RandomWords(),
       debugShowCheckedModeBanner: false,
     );
@@ -101,7 +104,7 @@ class _RandomWordsState extends State<RandomWords> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My new Flutter App'),
+        title: Text('Startup Namer'),
         actions: [
           IconButton(
             icon: Icon(Icons.list),
